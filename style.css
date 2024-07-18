@@ -1,0 +1,259 @@
+:root {
+  --bg-card: #f4f4f4;
+  --primary: #007bff;
+  --primary-shadow: #2e1065;
+  --dark-text: #333;
+  --dark-secondary: #555;
+  --light: #d9d9d9;
+  --bg-linear: linear-gradient(0deg, var(--primary) 50%, var(--dark-text) 125%);
+  --white: #fff;
+  --border: #ccc;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-card);
+  color: var(--dark-text);
+}
+
+nav {
+  background-color: var(--primary);
+  color: var(--white);
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  color: var(--white);
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.links ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.links ul li {
+  margin-left: 20px;
+}
+
+.hero {
+  background-color: var(--primary);
+  color: var(--white);
+  text-align: center;
+  padding: 100px 20px;
+  margin-bottom: 10px;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: 48px;
+}
+
+.hero p {
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+.hero button {
+  background-color: var(--white);
+  color: #007bff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.section {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: var(--white);
+  margin-bottom: 5px;
+}
+
+.products {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+
+  padding: 1rem;
+  width: 14rem;
+  background-color: var(--bg-card);
+
+  border-radius: 1rem;
+}
+
+.image_container {
+  overflow: hidden;
+  cursor: pointer;
+
+  position: relative;
+  z-index: 5;
+
+  width: 100%;
+  height: 8rem;
+  background-color: var(--primary);
+
+  border-radius: 0.5rem;
+}
+
+.image_container .image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 3rem;
+  fill: var(--dark-secondary);
+}
+
+.title {
+  overflow: clip;
+
+  width: 100%;
+
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--dark-text);
+  text-transform: capitalize;
+  text-wrap: nowrap;
+  text-overflow: ellipsis;
+}
+
+.size {
+  font-size: 0.75rem;
+  color: var(--dark-text);
+}
+
+.list-size {
+  margin: 0.25rem 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 0.25rem;
+}
+
+.list-size .item-list {
+  list-style: none;
+}
+
+.list-size .item-list-button {
+  cursor: pointer;
+
+  padding: 0.5rem;
+  background-color: var(--light);
+
+  font-size: 0.75rem;
+  color: var(--dark-text);
+
+  border: 2px solid var(--light);
+  border-radius: 0.25rem;
+
+  transition: all 0.3s ease-in-out;
+}
+
+.item-list-button:hover {
+  border: 2px solid var(--dark-text);
+}
+
+.item-list-button:focus {
+  background-color: var(--primary);
+
+  border: 2px solid var(--primary-shadow);
+
+  box-shadow: inset 0px 1px 4px var(--primary-shadow);
+}
+
+.action {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.price {
+  font-size: 1.5rem;
+  color: var(--dark-text);
+}
+
+.cart-button {
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
+
+  padding: 0.5rem;
+  width: 100%;
+  background: var(--primary);
+
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--dark-text);
+  text-wrap: nowrap;
+
+  border: none;
+  border-radius: 0.5rem;
+}
+
+.cart-button .cart-icon {
+  width: 1rem;
+}
+
+footer {
+  background-color: var(--primary);
+  color: var(--white);
+  padding: 20px;
+  text-align: center;
+}
+
+footer a {
+  color: var(--white);
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+footer ul li {
+  margin-left: 20px;
+}
+
+footer .social-media {
+  margin-top: 20px;
+}
+
+footer .social-media a {
+  color: var(--white);
+  margin: 0 10px;
+  font-size: 24px;
+  text-decoration: none;
+}
